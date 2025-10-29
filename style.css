@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --border-color: red;
+    --fixed-width: 300px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    height: 300px;
+    width: var(--fixed-width);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-color: var(--border-color);
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.box:nth-child(1){
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-color: var(--border-color);
+}
+
+.box:nth-child(2), .box:nth-child(3){
+    border-top: 1px solid;
+    border-color: var(--border-color);
+}
+
+.box:nth-child(4), .box:nth-child(7){
+    border-left: 1px solid;
+    border-color: var(--border-color);
+}
+
+button{
+    margin: 1em;
+    width: var(--fixed-width);
+    height: 4em;
+    cursor: pointer;
+    background-color: var(--border-color);
+    filter: brightness(0.8);
+    border: transparent;
+    border-radius: 10px;
+}
+
+button:hover{
+    box-shadow: 0 0 5px var(--border-color);
+}
+
+.display{
+    font-size: 2rem;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--border-color);
+    width: var(--fixed-width);
+    background-color: hsl(0 0% 80%);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
