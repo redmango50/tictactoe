@@ -1,5 +1,5 @@
 # Basic Tic-Tac-Toe
-## setup
+## Setup
 - Click on code dropdown
 - Select "download as zip" or similar
 - After download click on the zip & extract it
